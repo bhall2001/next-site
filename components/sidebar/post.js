@@ -9,7 +9,7 @@ export default function Post({ isMobile, route, level = 1, onClick, ...props }) 
   useEffect(() => {
     if (ref && ref.current && !isMobile) {
       const content = document.querySelector('.sidebar-content');
-      // 32 is the top and bottom margin for .link
+      // 32 is the top and bottom margin for `.link`
       const height = ref.current.offsetTop - 32;
 
       content.scrollTop = height - content.offsetHeight / 2;
